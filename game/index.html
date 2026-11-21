@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lanterns of Luminara — Spot the Difference</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0d0a1f;
+    color: #e8e4ff;
+    font-family: Georgia, serif;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  canvas {
+    display: block;
+    width: 1280px;
+    height: 692px;
+    cursor: crosshair;
+  }
+  #status {
+    width: 1280px;
+    box-sizing: border-box;
+    padding: 5px 16px;
+    font-size: 14px;
+    color: #b8aed6;
+    background: #14102a;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="692"></canvas>
+<div id="status" role="status" aria-live="polite">Loading the festival…</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
